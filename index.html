@@ -382,11 +382,19 @@
             $win.toggleClass('minimized');
             $win.hasClass('minimized') ? $win.resizable('disable') : $win.resizable('enable');
         }
+                  function removeWindow(id) {
+                $(`#${id}`).fadeOut(200, function() {
+                    $(this).remove();
+                    state.activeWindows = state.activeWindows.filter(w => w.id !== id);
+                    updateWindowsNav();
+                });
+            }
     </script>
 </body>
 
 
 </html>
+
 
 
 
