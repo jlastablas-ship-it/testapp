@@ -369,7 +369,7 @@
 
         function windowMaximizeInMain(id) {
             const $win = $(`#${id}`);
-            const $main = $('#main');
+            const $main = $('#array-container');
             if ($win.hasClass('pseudo-fullscreen')) windowMaximizeViewport(id);
             const isMaximized = $win.width() >= $main.width() - 5 && $win.position().top === 0;
             if (isMaximized) { $win.css({ top: '50px', left: '50px', width: '450px', height: '350px' }); }
@@ -394,6 +394,7 @@
 
 
 </html>
+
 
 
 
