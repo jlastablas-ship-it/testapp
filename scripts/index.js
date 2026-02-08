@@ -1,12 +1,4 @@
 
-        var array_1 = [1, 2];
-        function mostrarArray() {
-            console.log(array_1);
-            document.body.innerHTML += "<p>" + array_1.join(", ") + "</p>";
-            document.body.innerHTML += "<p>" + array_1 + "</p>";
-
-        }
-        //mostrarArray();
         const lista_elementos= Array.from(document.getElementsByTagName("template"));
         lista_elementos.forEach(function (elemento) {
             console.log(elemento);
@@ -20,7 +12,7 @@
 
         document.querySelectorAll(".window-card").forEach(function (cuadro) {
             cuadro.addEventListener("click", function () {
-                // alert("Has hecho clic en el número: " + this.textContent);
+                 alert("Has hecho clic en el número: " + this.textContent);
             });
         });
 
@@ -70,3 +62,4 @@
                 });
             }
     
+
