@@ -12,7 +12,7 @@
 
         document.querySelectorAll(".window-card").forEach(function (cuadro) {
             cuadro.addEventListener("click", function () {
-                 alert("Has hecho clic en el número: " + this.textContent);
+                 console.log("Has hecho clic en el número: " + this.textContent);
             });
         });
 
@@ -62,4 +62,5 @@
                 });
             }
     
+
 
